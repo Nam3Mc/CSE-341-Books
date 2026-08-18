@@ -1,0 +1,28 @@
+{
+  "name": "cse-341-books",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "nodemon --env-file=.env server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nam3Mc/CSE-341-Books.git"
+  },
+  "author": "Dreiser Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nam3Mc/CSE-341-Books/issues"
+  },
+  "homepage": "https://github.com/Nam3Mc/CSE-341-Books#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
