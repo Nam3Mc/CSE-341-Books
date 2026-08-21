@@ -22,7 +22,8 @@
   "homepage": "https://github.com/Nam3Mc/CSE-341-Books#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0"
   },
   "devDependencies": {
     "eslint": "^10.8.1",
