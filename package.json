@@ -1,14 +1,13 @@
 {
-  "name": "cse-341-books",
+  "name": "cse-341",
   "version": "1.0.0",
+  "description": "CSE 341 BYU Project",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env server.js",
-    "dev": "nodemon --env-file=.env server.js",
-    "lint": "eslint",
-    "lint:fix": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,13 +19,10 @@
     "url": "https://github.com/Nam3Mc/CSE-341-Books/issues"
   },
   "homepage": "https://github.com/Nam3Mc/CSE-341-Books#readme",
-  "description": "",
   "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongodb": "^7.5.0"
-  },
-  "devDependencies": {
-    "eslint": "^10.8.1",
     "nodemon": "^3.1.14"
   }
 }

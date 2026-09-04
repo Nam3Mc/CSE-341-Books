@@ -1,25 +1,20 @@
-import './src/db/dns-init.js'
-import app from "./app.js"
-import { connectToDb } from "./src/db/connect.js"
+import express from 'express'
+import cors from 'cors'
+import data from './src/model/data.js'
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080
 
-if (!PORT) {
-    throw new Error('PORT is not defined in your env')
-}
+const app = express()
 
-const StartServer = async () => {
-    
-    try {
-        await connectToDb()
-        
-        app.listen(PORT, () => {
-            console.log(`App Running and listening on port ${PORT}`)
-        })
-    } catch (error) {
-        console.error('Database connection failed:',  error.message)
-        process.exit(1)
-    }
-}
+app.use(cors())
+app.use(express.json())
 
-await StartServer()
+app.get('/professional', async (req, res) => {
+    const db = data
+    res.status(200).json(db[0])
+} )
+
+app.listen(PORT, () => {
+    console.log(PORT)
+    console.log('app working')
+})
