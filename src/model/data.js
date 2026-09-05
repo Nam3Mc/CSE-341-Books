@@ -6,10 +6,10 @@ const data = [
       "firstName": "Alex",
       "url": "https://alexrivera.dev"
     },
-    "primaryDescription": "Full Stack Developer especializado en arquitecturas cloud y soluciones web modernas.",
-    "workDescription1": "Lideró la migración de microservicios incrementando el rendimiento en un 40%.",
-    "workDescription2": "Diseñó e implementó APIs RESTful y GraphQL escalables para clientes empresariales.",
-    "linkTitleText": "Redes Profesionales",
+    "primaryDescription": "Full Stack Developer specialized in cloud architectures and modern web solutions.",
+    "workDescription1": "Led microservices migration, increasing overall system performance by 40%.",
+    "workDescription2": "Designed and implemented scalable RESTful and GraphQL APIs for enterprise clients.",
+    "linkTitleText": "Professional Networks",
     "linkedInLink": {
       "text": "LinkedIn - Alex Rivera",
       "link": "https://www.linkedin.com/in/alexrivera"
@@ -20,22 +20,22 @@ const data = [
     }
   },
   {
-    "professionalName": "Beatriz Gómez",
+    "professionalName": "Beatriz Gomez",
     "base64Image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
     "nameLink": {
       "firstName": "Beatriz",
       "url": "https://beatrizgomez.design"
     },
-    "primaryDescription": "Diseñadora UX/UI apasionada por crear experiencias digitales accesibles e intuitivas.",
-    "workDescription1": "Rediseñó la aplicación móvil de e-commerce aumentando la conversión un 25%.",
-    "workDescription2": "Creó y gestionó el sistema de diseño global para múltiples plataformas.",
-    "linkTitleText": "Conecta Conmigo",
+    "primaryDescription": "UX/UI Designer passionate about creating accessible and intuitive digital experiences.",
+    "workDescription1": "Redesigned the e-commerce mobile application, boosting conversion rate by 25%.",
+    "workDescription2": "Created and managed the global design system across multiple platforms.",
+    "linkTitleText": "Connect with Me",
     "linkedInLink": {
-      "text": "LinkedIn - Beatriz Gómez",
+      "text": "LinkedIn - Beatriz Gomez",
       "link": "https://www.linkedin.com/in/beatrizgomez"
     },
     "githubLink": {
-      "text": "GitHub - Beatriz Gómez",
+      "text": "GitHub - Beatriz Gomez",
       "link": "https://github.com/beatrizgomez"
     }
   },
@@ -46,10 +46,10 @@ const data = [
       "firstName": "Carlos",
       "url": "https://carlosmendoza.io"
     },
-    "primaryDescription": "Ingeniero de DevOps enfocado en automatización, CI/CD e infraestructura como código.",
-    "workDescription1": "Implementó pipelines de integración continua reduciendo el tiempo de despliegue a la mitad.",
-    "workDescription2": "Gestionó clústeres de Kubernetes garantizando una disponibilidad del 99.99%.",
-    "linkTitleText": "Enlaces de Interés",
+    "primaryDescription": "DevOps Engineer focused on automation, CI/CD, and infrastructure as code.",
+    "workDescription1": "Implemented continuous integration pipelines, cutting deployment times in half.",
+    "workDescription2": "Managed Kubernetes clusters, ensuring 99.99% system availability.",
+    "linkTitleText": "Useful Links",
     "linkedInLink": {
       "text": "LinkedIn - Carlos Mendoza",
       "link": "https://www.linkedin.com/in/carlosmendoza"
@@ -61,4 +61,4 @@ const data = [
   }
 ];
 
-export default data
+export default data;
