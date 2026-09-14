@@ -1,7 +1,7 @@
 import express from 'express'
 import swaggerUi from 'swagger-ui-express'
 import { swaggerSpec } from './src/swagger/swagger.js'
-import contactsRouter from './src/routeRs/contacts.js'
+import contactsRouter from './src/routers/contacts.js'
 
 const app = express()
 
