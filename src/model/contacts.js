@@ -44,7 +44,11 @@ const createContact = async (contactData) => {
 const updateContact = async (id, contactData) => {
     const db = getDb()
     const query = { id: id }
-    const result = await db.collection('contacts').replaceOne(query, contactData)
+    const updatedContact = {
+        ...contactData,
+        id
+    }
+    const result = await db.collection('contacts').replaceOne(query, updatedContact)
     return result
 }
 
