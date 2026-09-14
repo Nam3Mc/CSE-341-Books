@@ -1,10 +1,13 @@
 import express from 'express'
-import { allContacts, contactById } from './src/routes/contacts.js'
+import swaggerUi from 'swagger-ui-express'
+import { swaggerSpec } from './src/swagger/swagger.js'
+import contactsRouter from './src/routeRs/contacts.js'
 
 const app = express()
 
 app.use(express.json())
-app.use('/contacts', allContacts)
-app.use('/contact', contactById)
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
+app.use('/contacts', contactsRouter)
 
 export default app
