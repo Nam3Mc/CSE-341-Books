@@ -1,3 +1,4 @@
+import { ObjectId } from "mongodb";
 import { getDb } from "../db/connect.js";
 
 const getContacts = async () => {
@@ -13,7 +14,7 @@ const getContacts = async () => {
 
 const getContactById = async (id) => {
     const db = getDb()
-    const query = { id: id }
+    const query = { _id: new ObjectId(id) }
 
     const contact = await db.collection('contacts').find(query).toArray()
 
